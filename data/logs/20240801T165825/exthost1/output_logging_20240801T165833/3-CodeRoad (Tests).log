@@ -1,0 +1,451 @@
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 "before all" hook for ":1 "salon" database should exist"
+
+Error: Cannot connect to PostgreSQL
+error: database "salon" does not exist
+at Context.<anonymous> (test/1.1.test.js:40:13)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+  ✘ SUBTASKS 1.1 "after all" hook for ":21 You should display the suggested message after adding an new appointment"
+
+Error: Connection terminated unexpectedly
+at Connection.<anonymous> (node_modules/pg/lib/client.js:272:71)
+at Object.onceWrapper (node:events:632:28)
+at Connection.emit (node:events:518:28)
+at Socket.<anonymous> (node_modules/pg/lib/connection.js:102:10)
+at Socket.emit (node:events:530:35)
+at endReadableNT (node:internal/streams/readable:1696:12)
+at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :11 You should create a "salon.sh" file in the "project" folder
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(projectDirectory.indexOf('salon.sh') >= 0)
+
+at Context.<anonymous> (test/1.1.test.js:196:5)
+  ✘ SUBTASKS 1.1 :12 You should have the correct "shebang" at the top of your script
+
+Error: ENOENT: no such file or directory, open '../salon.sh'
+  ✘ SUBTASKS 1.1 :13 Your script file should have executable permissions
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(executable)
+
+at Context.<anonymous> (test/1.1.test.js:208:5)
+  ✘ SUBTASKS 1.1 :14 You should not use the "clear" command in your script
+
+Error: ENOENT: no such file or directory, open '../salon.sh'
+
+An error occurred running ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+  ✘ SUBTASKS 1.1 :15 You should display a list of services you offer
+
+Error: Command failed: ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+
+at ChildProcess.exithandler (node:child_process:422:12)
+at ChildProcess.emit (node:events:518:28)
+at maybeClose (node:internal/child_process:1105:16)
+at Socket.<anonymous> (node:internal/child_process:457:11)
+at Socket.emit (node:events:518:28)
+at Pipe.<anonymous> (node:net:337:12)
+
+An error occurred running ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+  ✘ SUBTASKS 1.1 :16 You should display the list of services again if the entered service doesn't exist
+
+Error: Command failed: ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+
+at ChildProcess.exithandler (node:child_process:422:12)
+at ChildProcess.emit (node:events:518:28)
+at maybeClose (node:internal/child_process:1105:16)
+at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+  ✘ SUBTASKS 1.1 :17 You should read input into the correct variables
+
+Error: ENOENT: no such file or directory, open '../salon.sh'
+
+An error occurred running ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+  ✘ SUBTASKS 1.1 :18 You should enter a new customer into the database if they don't exist
+
+Error: Command failed: ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+
+at ChildProcess.exithandler (node:child_process:422:12)
+at ChildProcess.emit (node:events:518:28)
+at maybeClose (node:internal/child_process:1105:16)
+at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+An error occurred running ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+  ✘ SUBTASKS 1.1 :19 You can add a new appointment by entering the suggested input at each prompt
+
+Error: Command failed: ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+
+at ChildProcess.exithandler (node:child_process:422:12)
+at ChildProcess.emit (node:events:518:28)
+at maybeClose (node:internal/child_process:1105:16)
+at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+An error occurred running ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+  ✘ SUBTASKS 1.1 :20 You can create an appointment for an existing customer by entering the suggested input at each prompt
+
+Error: Command failed: ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+
+at ChildProcess.exithandler (node:child_process:422:12)
+at ChildProcess.emit (node:events:518:28)
+at maybeClose (node:internal/child_process:1105:16)
+at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+
+An error occurred running ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+  ✘ SUBTASKS 1.1 :21 You should display the suggested message after adding an new appointment
+
+Error: Command failed: ../salon.sh
+/bin/sh: 1: ../salon.sh: not found
+
+at ChildProcess.exithandler (node:child_process:422:12)
+at ChildProcess.emit (node:events:518:28)
+at maybeClose (node:internal/child_process:1105:16)
+at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :12 You should have the correct "shebang" at the top of your script
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(/^\s*#![ \t]*\/bin\/bash/.test(scriptFile))
+
+at Context.<anonymous> (test/1.1.test.js:202:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :18 You should enter a new customer into the database if they don't exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:280:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :19 You can add a new appointment by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:291:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Fake...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :20 You can create an appointment for an existing customer by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:302:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :21 You should display the suggested message after adding an new appointment
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(re.test(scriptOutput))
+
+at Context.<anonymous> (test/1.1.test.js:315:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :12 You should have the correct "shebang" at the top of your script
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(/^\s*#![ \t]*\/bin\/bash/.test(scriptFile))
+
+at Context.<anonymous> (test/1.1.test.js:202:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :18 You should enter a new customer into the database if they don't exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:280:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :19 You can add a new appointment by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:291:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Fake...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :20 You can create an appointment for an existing customer by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:302:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :21 You should display the suggested message after adding an new appointment
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(re.test(scriptOutput))
+
+at Context.<anonymous> (test/1.1.test.js:315:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :12 You should have the correct "shebang" at the top of your script
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(/^\s*#![ \t]*\/bin\/bash/.test(scriptFile))
+
+at Context.<anonymous> (test/1.1.test.js:202:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :18 You should enter a new customer into the database if they don't exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:280:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :19 You can add a new appointment by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:291:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Fake...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :20 You can create an appointment for an existing customer by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:302:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :21 You should display the suggested message after adding an new appointment
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(re.test(scriptOutput))
+
+at Context.<anonymous> (test/1.1.test.js:315:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+FAILED TEST LOG
+  ✘ SUBTASKS 1.1 :12 You should have the correct "shebang" at the top of your script
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(/^\s*#![ \t]*\/bin\/bash/.test(scriptFile))
+
+at Context.<anonymous> (test/1.1.test.js:202:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :18 You should enter a new customer into the database if they don't exist
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:280:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :19 You can add a new appointment by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:291:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Fake...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :20 You can create an appointment for an existing customer by entering the suggested input at each prompt
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(res.rows.length > 0)
+
+at Context.<anonymous> (test/1.1.test.js:302:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+An error occurred running ../salon.sh
+../salon.sh: 6: [[: not found
+An error occurred running ../salon.sh
+../salon.sh: 31: [[: not found
+An error occurred running ../salon.sh
+ERROR:  syntax error at or near ","
+LINE 1: ...ppointments(customer_id, service_id, time) VALUES(, 1, 'Test...
+                                                             ^
+An error occurred running ../salon.sh
+../salon.sh: 46: [[: not found
+  ✘ SUBTASKS 1.1 :21 You should display the suggested message after adding an new appointment
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+assert(re.test(scriptOutput))
+
+at Context.<anonymous> (test/1.1.test.js:315:5)
+at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
