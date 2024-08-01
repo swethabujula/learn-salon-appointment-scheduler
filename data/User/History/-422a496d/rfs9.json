@@ -1,0 +1,6 @@
+{
+  "redhat.telemetry.enabled": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true
+}

@@ -24,3 +24,34 @@
 2024-08-01 17:23:45.733 [info] No GitHub remotes found for folder /workspace/.vscode-remote
 2024-08-01 17:23:45.751 [info] Review+0> No matching pull request metadata found locally for current branch master
 2024-08-01 17:23:45.769 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-08-01 17:24:42.837 [info] Review+0> Validate state in progress
+2024-08-01 17:24:42.837 [info] Review+0> Validating state...
+2024-08-01 17:24:42.841 [warning] No remotes found. The following remotes are missing: origin, upstream
+2024-08-01 17:24:42.841 [info] No GitHub remotes found for folder /workspace/.vscode-remote
+2024-08-01 17:24:42.864 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-08-01 17:24:42.900 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-08-01 17:24:55.191 [info] Review+0> Validate state in progress
+2024-08-01 17:24:55.191 [info] Review+0> Validating state...
+2024-08-01 17:24:55.238 [info] Review+0> Queuing additional validate state
+2024-08-01 17:24:55.455 [info] Found GitHub remote for folder /workspace/.vscode-remote
+2024-08-01 17:24:55.773 [info] Trying to use globalState for assignableUsers.
+2024-08-01 17:24:55.917 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-08-01 17:24:55.949 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-08-01 17:24:56.806 [info] Using globalState assignableUsers for 1.
+2024-08-01 17:24:57.445 [info] Review+0> Validating state...
+2024-08-01 17:24:57.689 [info] Found GitHub remote for folder /workspace/.vscode-remote
+2024-08-01 17:24:57.995 [info] Trying to use globalState for assignableUsers.
+2024-08-01 17:24:58.129 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-08-01 17:24:58.142 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-08-01 17:24:58.630 [info] No globalState for assignableUsers.
+2024-08-01 17:25:58.291 [info] Review+0> Validate state in progress
+2024-08-01 17:25:58.291 [info] Review+0> Validating state...
+2024-08-01 17:25:58.598 [info] Found GitHub remote for folder /workspace/.vscode-remote
+2024-08-01 17:25:58.599 [info] Using in-memory cached assignable users.
+2024-08-01 17:25:58.727 [info] Review+0> No matching pull request metadata found locally for current branch master
+2024-08-01 17:25:58.954 [info] Review+0> No matching pull request metadata found on GitHub for current branch master
+2024-08-01 17:26:08.320 [error] GitHubRepository> Unable to compare commits between freeCodeCamp:main and swethabujula:master: HttpError: No common ancestor between freeCodeCamp:main and swethabujula:master.
+2024-08-01 17:26:08.677 [error] GitHubRepository> Unable to compare commits between freeCodeCamp:main and swethabujula:master: HttpError: No common ancestor between freeCodeCamp:main and swethabujula:master.
+2024-08-01 17:26:08.678 [info] CreatePullRequestViewProvider> Initializing "create" view: {"defaultBaseRemote":{"owner":"freeCodeCamp","repositoryName":"learn-salon-appointment-scheduler"},"defaultBaseBranch":"main","defaultCompareRemote":{"owner":"swethabujula","repositoryName":"learn-salon-appointment-scheduler"},"defaultCompareBranch":"master","defaultTitle":"salon","defaultDescription":"Checklist:\n\n<!-- Please follow this checklist and put an x in each of the boxes, like this: [x]. It will ensure that our team takes your pull request seriously. -->\n\n- [ ] I have read [freeCodeCamp's contribution guidelines](https://contribute.freecodecamp.org).\n- [ ] My pull request has a [descriptive title](https://contribute.freecodecamp.org/#/how-to-open-a-pull-request?id=prepare-a-good-pr-title) (**not** a vague title like `Update index.md`)\n\n<!--If your pull request closes a GitHub issue, replace the XXXXX below with the issue number.-->\n\nCloses #XXXXX\n\n<!-- Feel free to add any additional description of changes below this line -->\n","baseHasMergeQueue":false,"remoteCount":2,"allowAutoMerge":false,"mergeMethodsAvailability":{"merge":false,"squash":false,"rebase":false},"autoMergeDefault":false,"createError":"","labels":[],"isDraftDefault":false,"isDarkTheme":false,"creating":false,"initializeWithGeneratedTitleAndDescription":false,"preReviewState":0,"reviewing":false}
+2024-08-01 17:26:10.752 [error] GitHubRepository> Unable to compare commits between freeCodeCamp:main and swethabujula:master: HttpError: No common ancestor between freeCodeCamp:main and swethabujula:master.
+2024-08-01 17:26:10.754 [info] CreatePullRequestViewProvider> Initializing "create" view: {"defaultBaseRemote":{"owner":"freeCodeCamp","repositoryName":"learn-salon-appointment-scheduler"},"defaultBaseBranch":"main","defaultCompareRemote":{"owner":"swethabujula","repositoryName":"learn-salon-appointment-scheduler"},"defaultCompareBranch":"master","defaultTitle":"salon","defaultDescription":"Checklist:\n\n<!-- Please follow this checklist and put an x in each of the boxes, like this: [x]. It will ensure that our team takes your pull request seriously. -->\n\n- [ ] I have read [freeCodeCamp's contribution guidelines](https://contribute.freecodecamp.org).\n- [ ] My pull request has a [descriptive title](https://contribute.freecodecamp.org/#/how-to-open-a-pull-request?id=prepare-a-good-pr-title) (**not** a vague title like `Update index.md`)\n\n<!--If your pull request closes a GitHub issue, replace the XXXXX below with the issue number.-->\n\nCloses #XXXXX\n\n<!-- Feel free to add any additional description of changes below this line -->\n","baseHasMergeQueue":false,"remoteCount":2,"allowAutoMerge":false,"mergeMethodsAvailability":{"merge":false,"squash":false,"rebase":false},"autoMergeDefault":false,"createError":"","labels":[],"isDraftDefault":false,"isDarkTheme":false,"creating":false,"initializeWithGeneratedTitleAndDescription":false,"preReviewState":0,"reviewing":false}
